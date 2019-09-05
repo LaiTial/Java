@@ -4,7 +4,7 @@
 chapter3
 난수의 합 계산하기
 0-99사이의 난수를 입력받은 개수만큼 만든 후 그 합을 출력하는 프로그램
-
+*/
 
 package rand_number_plus;
 import java.util.*;
