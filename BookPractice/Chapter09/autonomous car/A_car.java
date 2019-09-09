@@ -33,8 +33,7 @@ public class A_car implements Make_car_in{
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		A_car car = new A_car();
 		
 		car.start();
