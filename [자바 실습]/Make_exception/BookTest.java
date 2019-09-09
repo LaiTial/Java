@@ -4,12 +4,12 @@ public class BookTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		SeperateBook book = new SeperateBook("863b", "³ª¹«", "º£¸£º£¸£");
-		Lendable arr[] = {new SeperateBook("8d", "cort", "ºò¼¿")};
+		SeperateBook book = new SeperateBook("863b", "ë‚˜ë¬´", "ë² ë¥´ë² ë¥´");
+		Lendable arr[] = {new SeperateBook("8d", "cort", "ë¹…ì…€")};
 
 		try {
-			book.checkOut("¼­°æ", "2006 10 01");
-			book.checkOut("¸®¾Æ", "2006 10 01");
+			book.checkOut("ì„œê²½", "2006 10 01");
+			book.checkOut("ë¦¬ì•„", "2006 10 01");
 		}
 		
 		catch(Exception e){
