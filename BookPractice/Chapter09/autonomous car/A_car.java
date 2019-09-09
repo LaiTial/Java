@@ -7,20 +7,20 @@ public class A_car implements Make_car_in{
 	@Override
 	public void start()
 	{
-		System.out.println("ÀÚµ¿Â÷°¡ Ãâ¹ßÇÕ´Ï´Ù.");
+		System.out.println("ìë™ì°¨ê°€ ì¶œë°œí•©ë‹ˆë‹¤.");
 	}
 	
 	@Override
 	public void stop()
 	{
-		System.out.println("ÀÚµ¿Â÷°¡ Á¤ÁöÇÕ´Ï´Ù.");
+		System.out.println("ìë™ì°¨ê°€ ì •ì§€í•©ë‹ˆë‹¤.");
 	}
 	
 	@Override
 	public int setSpeed(int speed)
 	{
 		this.speed = speed;
-		System.out.println("ÀÚµ¿Â÷°¡ ¼Óµµ¸¦ " + speed + "km/h·Î ¹Ù²ß´Ï´Ù.");
+		System.out.println("ìë™ì°¨ê°€ ì†ë„ë¥¼ " + speed + "km/hë¡œ ë°”ê¿‰ë‹ˆë‹¤.");
 		return speed;
 	}
 	
@@ -28,7 +28,7 @@ public class A_car implements Make_car_in{
 	public int turn(int degree)
 	{
 		this.degree = degree;
-		System.out.println("ÀÚµ¿Â÷°¡ ¹æÇâÀ» " + degree + "µµ ¸¸Å­ ¹Ù²ß´Ï´Ù.");
+		System.out.println("ìë™ì°¨ê°€ ë°©í–¥ì„ " + degree + "ë„ ë§Œí¼ ë°”ê¿‰ë‹ˆë‹¤.");
 		return degree;
 	}
 	
