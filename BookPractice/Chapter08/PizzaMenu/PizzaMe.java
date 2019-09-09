@@ -15,19 +15,19 @@ public class PizzaMe extends JFrame{
 		bigpanel.add(litpanel1);
 		bigpanel.add(litpanel2);
 		
-		JLabel mo = new JLabel("ÀÚ¹Ù ÇÇÀÚ¿¡ ¿À½Å °ÍÀ» È¯¿µÇÕ´Ï´Ù. ÇÇÀÚ Á¾·ù¸¦ ¼±ÅÃÇÏ½Ã¿À.");
+		JLabel mo = new JLabel("ìë°” í”¼ìì— ì˜¤ì‹  ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤. í”¼ì ì¢…ë¥˜ë¥¼ ì„ íƒí•˜ì‹œì˜¤.");
 		litpanel1.add(mo);
 		
 		JButton button1, button2, button3;
-		button1 = new JButton("ÄŞº¸ ÇÇÀÚ");
-		button2 = new JButton("Æ÷Å×ÀÌÅäÇÇÀÚ");
-		button3 = new JButton("ºÒ°í±âÇÇÀÚ");
+		button1 = new JButton("ì½¤ë³´ í”¼ì");
+		button2 = new JButton("í¬í…Œì´í† í”¼ì");
+		button3 = new JButton("ë¶ˆê³ ê¸°í”¼ì");
 		
 		litpanel2.add(button1);
 		litpanel2.add(button2);
 		litpanel2.add(button3);
 		
-		JLabel mo2 = new JLabel("°³¼ö");
+		JLabel mo2 = new JLabel("ê°œìˆ˜");
 		litpanel2.add(mo2);
 		
 		JTextField text = new JTextField(10);
@@ -35,7 +35,7 @@ public class PizzaMe extends JFrame{
 		
 		setSize(600, 150);
 		setVisible(true);
-		setTitle("ÇÇÀÚ ÁÖ¹® È­¸é");
+		setTitle("í”¼ì ì£¼ë¬¸ í™”ë©´");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
