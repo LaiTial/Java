@@ -11,21 +11,21 @@ public class Temperature extends JFrame{
 		
 		setSize(300, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("¿Âµµ º¯È¯±â");
+		setTitle("ì˜¨ë„ ë³€í™˜ê¸°");
 		
-		JLabel s1 = new JLabel("È­¾¾ ¿Âµµ");
+		JLabel s1 = new JLabel("í™”ì”¨ ì˜¨ë„");
 		s.add(s1);
 		
 		JTextField t1 = new JTextField(15);
 		s.add(t1);
 		
-		JLabel s2 = new JLabel("¼·¾¾ ¿Âµµ");
+		JLabel s2 = new JLabel("ì„­ì”¨ ì˜¨ë„");
 		s.add(s2);
 		
 		JTextField t2 = new JTextField(15);
 		s.add(t2);
 		
-		JButton button = new JButton("º¯È¯");
+		JButton button = new JButton("ë³€í™˜");
 		s.add(button);
 		
 		setVisible(true);
