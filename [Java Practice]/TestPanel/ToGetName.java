@@ -27,23 +27,19 @@ public class ToGetName extends JFrame{
 		
 		p1.setLayout(new FlowLayout());
 		
-		JLabel label = new JLabel("�̸�: ");
+		JLabel label = new JLabel("ÀÌ¸§: ");
 		JTextField text = new JTextField(13);
 		p1.add(label);
 		p1.add(text);
 		
-		JButton button = new JButton("Ȯ��");
+		JButton button = new JButton("È®ÀÎ");
 		p2.add(button);
 		
-		//ActionListener list = new ButtonGeo(text);
-		//button.addActionListener(list);
-		
-		//GoToButton.clickEvent("gamePanel", button);
 		
 		this.setSize(280, 130);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
-		this.setTitle("�̸� �Է�â");
+		this.setTitle("ÀÌ¸§ ÀÔ·ÂÃ¢");
 	}
 
 	public void setInfo(Boolean info) {
