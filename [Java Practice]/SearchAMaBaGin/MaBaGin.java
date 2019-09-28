@@ -7,7 +7,7 @@ public class MaBaGin {
 	int N, Maba;
 	int howMany = 0, howPrint = 0;
 	
-	public MaBaGin(int N) //ÀÌ Å¬·¡½ºÀÇ »ı¼ºÀÚÇÔ¼ö. ¸¶¹æÁø¿¡ ÇÊ¿äÇÑ ¹è¿­ µîÀ» »ı¼ºÇÏ°í º¯¼ö¸¦ ÃÊ±âÈ­ÇÑ´Ù.
+	public MaBaGin(int N) //ì´ í´ë˜ìŠ¤ì˜ ìƒì„±ìí•¨ìˆ˜. ë§ˆë°©ì§„ì— í•„ìš”í•œ ë°°ì—´ ë“±ì„ ìƒì„±í•˜ê³  ë³€ìˆ˜ë¥¼ ì´ˆê¸°í™”í•œë‹¤.
 	{
 		sr=new int[N];
 		sc=new int[N+2];
@@ -23,8 +23,8 @@ public class MaBaGin {
 		   sc[0] = 0;
 		   sc[N+1] = 0;
 		   
-		/*2Â÷¿ø ¹è¿­ msÀÇ 00¹øÂ°ºÎÅÍ ¼ø¼­´ë·Î ÃÊ±âÈ­¿Í µ¿½Ã¿¡ ÇàÀÇ ÇÕÀ» ±¸ÇÑ´Ù. ÇÑ Çà¿¡ ¸ğµÎ
-		 °ªÀÌ µé¾î°¨°ú µ¿½Ã¿¡ Á¶°Ç °Ë»ç¸¦ ÇÏ¿© ºÒÀÏÄ¡½Ã false¸¦ returnÇÑ´Ù.*/
+		/*2ì°¨ì› ë°°ì—´ msì˜ 00ë²ˆì§¸ë¶€í„° ìˆœì„œëŒ€ë¡œ ì´ˆê¸°í™”ì™€ ë™ì‹œì— í–‰ì˜ í•©ì„ êµ¬í•œë‹¤. í•œ í–‰ì— ëª¨ë‘
+		 ê°’ì´ ë“¤ì–´ê°ê³¼ ë™ì‹œì— ì¡°ê±´ ê²€ì‚¬ë¥¼ í•˜ì—¬ ë¶ˆì¼ì¹˜ì‹œ falseë¥¼ returní•œë‹¤.*/
 
 		   for(int i=0; i<N; i++) {  
 			   
@@ -39,8 +39,8 @@ public class MaBaGin {
 					return false;
 	   }
 		   
-			/*¿­ÀÇ ÇÕ°ú ´ë°¢¼± °¢°¢ÀÇ ÇÕÀ» ±¸ÇÏ´Â for¹®.
-			 ¿­ÀÇ ÇÕ ÇÏ³ª¸¦ ±¸ÇÒ ¶§¸¶´Ù Á¶°Ç °Ë»ç¸¦ ÇÏ¿© ºÒÀÏÄ¡½Ã false return.*/
+			/*ì—´ì˜ í•©ê³¼ ëŒ€ê°ì„  ê°ê°ì˜ í•©ì„ êµ¬í•˜ëŠ” forë¬¸.
+			 ì—´ì˜ í•© í•˜ë‚˜ë¥¼ êµ¬í•  ë•Œë§ˆë‹¤ ì¡°ê±´ ê²€ì‚¬ë¥¼ í•˜ì—¬ ë¶ˆì¼ì¹˜ì‹œ false return.*/
 		   
 		   for(int i=0; i<N; i++) {
 			   
@@ -57,17 +57,17 @@ public class MaBaGin {
 			 sc[N+1] += ms[i][i];
 	   }
 		   
-		   /*±¸ÇÑ ´ë°¢¼±ÀÇ ÇÕÀ» °Ë»çÇÑ´Ù. ºÒÀÏÄ¡½Ã false¸¦ return ÇÑ´Ù. */
+		   /*êµ¬í•œ ëŒ€ê°ì„ ì˜ í•©ì„ ê²€ì‚¬í•œë‹¤. ë¶ˆì¼ì¹˜ì‹œ falseë¥¼ return í•œë‹¤. */
 		   
 		   	if(checkNum() != true)
 		 		return false;
 		   	
-		/*¿©±â±îÁö ÀÌ ÇÔ¼ö°¡ Á¾·á°¡ µÇÁö ¾Ê¾Ò´Ù´Â °ÍÀº ÇöÀç±îÁö °Ë»çÇÑ ¸ğµç Á¶°Ç¹®ÀÌ ÀÏÂ÷ÇÑ´Ù´Â °ÍÀÌ¹Ç·Î ¸¶Áö¸·À¸·Î true¸¦ returnÇÑ´Ù.*/
+		/*ì—¬ê¸°ê¹Œì§€ ì´ í•¨ìˆ˜ê°€ ì¢…ë£Œê°€ ë˜ì§€ ì•Šì•˜ë‹¤ëŠ” ê²ƒì€ í˜„ì¬ê¹Œì§€ ê²€ì‚¬í•œ ëª¨ë“  ì¡°ê±´ë¬¸ì´ ì¼ì°¨í•œë‹¤ëŠ” ê²ƒì´ë¯€ë¡œ ë§ˆì§€ë§‰ìœ¼ë¡œ trueë¥¼ returní•œë‹¤.*/
 		   	
 			return true;
 	   }
 	   
-	   //´ë°¢¼±ÀÇ ÇÕÀÌ MagicNumber¿Í ÀÏÄ¡ÇÏ´Â Áö °Ë»çÇÏ´Â ÇÔ¼ö. µÎ ´ë°¢¼±ÀÇ ÇÕÀÌ ¸ğµÎ MagicNumber¿Í ÀÏÄ¡ÇÏ¸é true returnÇÏ°í ¾Æ´Ò ½Ã false return.
+	   //ëŒ€ê°ì„ ì˜ í•©ì´ MagicNumberì™€ ì¼ì¹˜í•˜ëŠ” ì§€ ê²€ì‚¬í•˜ëŠ” í•¨ìˆ˜. ë‘ ëŒ€ê°ì„ ì˜ í•©ì´ ëª¨ë‘ MagicNumberì™€ ì¼ì¹˜í•˜ë©´ true returní•˜ê³  ì•„ë‹ ì‹œ false return.
 	   public boolean checkNum()
 	   {
 		   if((sc[0] != Maba) || (sc[N+1] != Maba)) 
@@ -77,7 +77,7 @@ public class MaBaGin {
 	   }
 	   
 	   
-	 //°¢ ÇàÀÇ ÇÕÀÌ MagicNumber¿¡ ÀÏÄ¡ÇÏ´Â Áö °Ë»çÇÏ´Â ÇÔ¼ö. ÀÏÄ¡ÇÏ¸é true returnÇÏ°í ¾Æ´Ò ½Ã false return.
+	 //ê° í–‰ì˜ í•©ì´ MagicNumberì— ì¼ì¹˜í•˜ëŠ” ì§€ ê²€ì‚¬í•˜ëŠ” í•¨ìˆ˜. ì¼ì¹˜í•˜ë©´ true returní•˜ê³  ì•„ë‹ ì‹œ false return.
 	   public boolean checkNum(int i) 
 	   {
 		   if(sr[i] != Maba)
@@ -87,7 +87,7 @@ public class MaBaGin {
 		   return true;
 	   }
 	   
-	   //°¢ ¿­ÀÇ ÇÕÀÌ MagicNumber¿¡ ÀÏÄ¡ÇÏ´Â Áö °Ë»çÇÏ´Â ÇÔ¼ö. ÀÏÄ¡ÇÏ¸é true returnÇÏ°í ¾Æ´Ò ½Ã false return.
+	   //ê° ì—´ì˜ í•©ì´ MagicNumberì— ì¼ì¹˜í•˜ëŠ” ì§€ ê²€ì‚¬í•˜ëŠ” í•¨ìˆ˜. ì¼ì¹˜í•˜ë©´ true returní•˜ê³  ì•„ë‹ ì‹œ false return.
 	   public boolean checkNumTwo(int i)
 	   {
 		   
@@ -98,14 +98,14 @@ public class MaBaGin {
 		   return true;
 	   }
 	   
-	   //¸¶¹æÁø Ãâ·ÂÇÏ´Â ÇÔ¼ö.
+	   //ë§ˆë°©ì§„ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜.
 	   public void PrintMaBa(int cn)
 	   {
 		   System.out.println();
 		   
 		   if(count == 0)
 		   {
-			  System.out.println(" ÇĞ¹ø : 2018301011  ÀÌ¸§: ±è¼ÒÈñ");
+			  System.out.println(" í•™ë²ˆ : 2018301011  ì´ë¦„: ê¹€ì†Œí¬");
 			   System.out.println("N=" + N + ", Magic Number=" + sc[0]);
 		   }
 			   
@@ -125,7 +125,7 @@ public class MaBaGin {
 		 	System.out.printf(" |%4d\n\n", sc[N+1]);
 		}
 	   
-	   //ÇöÀç ÇÁ·Î±×·¥ ¸î¹øÂ° µ¹¸° °ÇÁö¸¦ Ãâ·ÂÇØÁÖ´Â ÇÔ¼ö
+	   //í˜„ì¬ í”„ë¡œê·¸ë¨ ëª‡ë²ˆì§¸ ëŒë¦° ê±´ì§€ë¥¼ ì¶œë ¥í•´ì£¼ëŠ” í•¨ìˆ˜
 	   public void howMany()
 	   {
 		 	howMany++;
